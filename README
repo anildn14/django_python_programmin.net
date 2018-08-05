@@ -1,0 +1,36 @@
+django-admin startproject mysite
+python manage.py runserver
+python manage.py migrate
+python manage.py startapp webapp
+
+urls.py-controls what is served based on url patterns(regular expressions)
+models.py-database structures and metadata
+views.py-handles what the end user "views" or interacts with.
+
+urls.py(main)
+    --App:Forum
+        --urls.py
+        --models.py
+        --views.py
+    --App:Blog
+        --urls.py
+        --models.py
+        --views.py
+    --App:Store
+        --urls.py
+        --models.py
+        --views.py
+
+python manage.py startapp personal
+python manage.py startapp blog
+
+python manage.py makemigrations
+python manage.py sqlmigrate blog 0001   --- to view the sql commands which will be fired
+python manage.py migrate
+
+python manage.py createsuperuser
+admin
+admin@djangopython.com
+admin_root
+
+https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
