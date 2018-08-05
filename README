@@ -31,6 +31,5 @@ python manage.py migrate
 python manage.py createsuperuser
 admin
 admin@djangopython.com
-admin_root
 
 https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
